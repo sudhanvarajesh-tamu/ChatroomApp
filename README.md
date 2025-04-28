@@ -4,7 +4,7 @@
 
 **Chatrooms** is a microservices-based real-time chat application built with **React, Node.js, Express, Socket.io, and MongoDB Atlas**. It enables users to create and join multiple chatrooms for seamless instant messaging, active user tracking, and efficient room-based interactions.  
 
-The backend is containerized with **Docker** for scalable and isolated service management and deployed on **AWS ECS & EC2**, ensuring high availability and performance.  
+The backend is containerized with **Docker** for scalable and isolated service management.
 
 ## ✨ Features  
 
@@ -15,7 +15,6 @@ The backend is containerized with **Docker** for scalable and isolated service m
 - **Microservices architecture** for scalability  
 - **Cloud-hosted MongoDB Atlas** for secure data storage  
 - **Containerized services** with Docker for deployment  
-- **AWS ECS & EC2** for cloud deployment  
 
 ## 🏗️ Tech Stack  
 
@@ -23,7 +22,7 @@ The backend is containerized with **Docker** for scalable and isolated service m
 - **Backend:** Node.js, Express, Socket.io  
 - **Authentication:** Passport.js, JWT  
 - **Database:** MongoDB Atlas  
-- **Deployment:** AWS ECS, EC2, Docker  
+- **Deployment:** Docker  
 - **Version Control:** Git & GitHub  
 
 ## 📦 Microservices Architecture  
@@ -89,13 +88,6 @@ npm start
 ```
 
 Open **http://localhost:3000** to access the chat app.  
-
-## 🚀 Deployment on AWS ECS  
-
-1. Build and push Docker images to AWS ECR  
-2. Configure ECS Task Definitions for microservices  
-3. Deploy to ECS using Fargate or EC2 instances  
-4. Set up a Load Balancer for routing  
 
 ## 🛠️ Testing  
 
