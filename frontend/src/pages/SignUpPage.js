@@ -11,13 +11,15 @@ const SignUpPage = () => {
   const navigate = useNavigate()
 
   const handleSignUp = async (e) => {
+    console.log("handling signup");
     e.preventDefault();
     try {
+      console.log(username);
       const res = await axios.post('http://localhost:8081/api/auth/signup', {username, password});
       navigate('/');
     } catch (error) {
       console.error(error);
-      setError('Failed to sign up. Username might be already taken.');
+      setError(error);
     }
   };
 

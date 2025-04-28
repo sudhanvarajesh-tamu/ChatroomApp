@@ -6,16 +6,20 @@ const router = express.Router();
 require('dotenv').config();
 
 router.post('/signup', async (req, res) => {
+  console.log('🔥 POST /signup body:', req.body);
   const { username, password } = req.body;
   try {
     const existingUser = await User.findOne({ username: username });
     if (existingUser) {
+      console.log('user exists');
       return res.status(409).json({ message: 'Username already exists' });
     }
     const newUser = new User({ username, password });
     await newUser.save();
+    console.log('user registered!!!!');
     res.status(201).json({ message: 'User registered successfully' });
   } catch (err) {
+    console.log('some error');
     return res.status(500).json({ message: err.message });
   }
 });

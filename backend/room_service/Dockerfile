@@ -1,7 +1,7 @@
 FROM node:16
 
 
-ENV MONGO_URI=mongodb+srv://sudhanva0001:MUmwEw5liHQuOcqd@rume-db.qiefvt9.mongodb.net/?retryWrites=true&w=majority&appName=rume-db
+ENV MONGO_URI=mongodb+srv://sudhanva0001:1234@rume-db.qiefvt9.mongodb.net/?retryWrites=true&w=majority&appName=rume-db
 ENV PORT=8083
 
 WORKDIR /app
